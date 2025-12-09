@@ -31,12 +31,54 @@ body{
     padding-left: 25px;
 }
 .sidebar-title{
+    position: relative;
     padding-top: 19px ;
     padding-bottom: 14px;
+}
+.sidebar-title span{
+    display: flex;
+    font-size: 17px;
+    line-height: 22px;
+    align-items: center;
+    gap: 4px;
 }
 .sidebar-title img{
     width: auto;
     height: 18px;
+}
+
+.sidebar-nav-item{
+    position: absolute;
+    background: #F5F5F7;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-radius: 16px;
+    border: 1px solid #DDDDDF;
+    box-shadow: 10px 5px 15px 0 #dfdddd;
+    z-index: 99;
+    visibility: hidden;
+}
+.sidebar-nav-item.visible{
+ visibility: visible;
+}
+.sidebar-nav-item li{
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height:24px;
+    padding: 4px 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sidebar-nav-item li:hover{
+    background: #E9E9EA70;
+    border-radius: 12px;
+}
+.sidebar-nav-item li i{
+    color: #777777;
 }
 .sidebar-searchbar{
     margin-top: 10px;

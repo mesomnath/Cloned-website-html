@@ -12,7 +12,16 @@
     <!--App side bar-->
     <section class="sidebar">
         <div class="sidebar-title">
-            <span><img src="./assets/sidebar-logo.svg" alt=""></span>
+            <span><img src="./assets/sidebar-logo.svg" alt=""> for <span id="navigationSelectedMenu">iPhone</span><i class="fa-solid fa-angle-down" onclick="sidebarToggle()" style="cursor: pointer;"></i></span>
+
+            <div class="sidebar-nav-item" id="sidebarDropdownMenu">
+                <li value="iPhone"><i class="fa-solid fa-mobile-button"></i> iPhone</li>
+                <li value="iPad"><i class="fa-solid fa-tablet-button"></i>iPad</li>
+                <li value="Mac"><i class="fa-solid fa-desktop"></i>Mac</li>
+                <li value="Vision"><i class="fa-solid fa-glasses"></i>Vision</li>
+                <li value="Watch"><i class="fa-solid fa-clock"></i>Watch</li>
+                <li value="TV"><i class="fa-solid fa-tv"></i>TV</li>
+            </div>
         </div>
         <div class="sidebar-searchbar">
             <form action="">
