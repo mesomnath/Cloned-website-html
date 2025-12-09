@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Clone - Pure HTML, CSS</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="app">
+    <!--App side bar-->
+    <section class="sidebar">
+        <div class="sidebar-title">
+            <span><img src="./assets/sidebar-logo.svg" alt=""></span>
+        </div>
+        <div class="sidebar-searchbar">
+            <form action="">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" placeholder="Search" id="searchInput" value="">
+                <span id="cancelBtn" class="cancel-btn"><i class="fa-solid fa-circle-xmark" onclick="handleCancelButton()"></i></span>
+            </form>
+        </div>
+        <div class="sidebar-items">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-star"></i> Discover</a></li>
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li> 
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li>
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li>               
+            </ul>
+        </div>
+        <div class="sidebar-items-header">
+            <p>Categories</p>
+        </div>
+        <div class="sidebar-items">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-star"></i> Discover</a></li>
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li> 
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li>
+                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Arcade</a></li>
+                <li><a href="#"><i class="fa-solid fa-paper-plane"></i> Send</a></li>               
+            </ul>
+        </div>
+    </section>
+    <!--App Body containers-->
+    <section class="app-content">
+        <h2>Productivity</h2>
+    </section>
+    <!--Script-->
+    <script src="js/main.js"></script>
+</body>
+</html>
