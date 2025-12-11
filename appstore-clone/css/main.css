@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+    font-family: var(--primary-font);
 }
 body{
     font-family: var(--primary-font);
@@ -178,7 +179,26 @@ body{
 }
 
 
-
+/** app content css **/
 .app-content{
     padding: 20px 30px;
+    background-color: #F6F6F9;
+    width: 100%;
+}
+
+.header-slider{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+}
+.header-items{
+    padding: 6px 10px;
+    background: #fff;
+    border-radius:6px;
+    box-shadow: 5px 4px 8px 0 #eeeeee;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    
 }
