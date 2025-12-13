@@ -1,6 +1,5 @@
 import { getPosts, getPostDetails } from "../api";
 import { useState, useEffect } from "react";
-
 export const CardLayout = () => {
   const [data, setData] = useState(null);
   const [selectedPost, setSelectedPost] = useState(null);
@@ -54,20 +53,20 @@ export const CardLayout = () => {
           </button>
         </div>
       ))}
-      {selectedPost && (
-        <div className="fixed inset-0 bg-slate-500 bg-opacity-10 flex justify-center items-center">
-          <div className="bg-white p-8 rounded-lg max-w-lg">
-            <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
-            <p>{selectedPost.body}</p>
-            <button
-              onClick={() => setSelectedPost(null)}
-              className="mt-4 bg-red-500 text-white p-2 rounded"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+{selectedPost && (
+  <div className="fixed bottom-0 inset-0 backdrop-blur-sm bg-white/30 flex justify-center items-center">
+    <div className="bg-white border-sm shadow-md p-8 rounded-lg max-w-lg bottom-0">
+      <h3 className="text-2xl font-bold mb-4">{selectedPost.title}</h3>
+      <p>{selectedPost.body}</p>
+      <button
+        onClick={() => setSelectedPost(null)}
+        className="mt-4 bg-red-500 text-white py-1.5 px-2 rounded"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+)}
     </div>
   );
 };
